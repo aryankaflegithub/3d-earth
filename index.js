@@ -43,7 +43,6 @@ const cloudsMat = new THREE.MeshStandardMaterial({
   opacity: 0.5,
   blending: THREE.AdditiveBlending,
   alphaMap: loader.load('./textures/earthcloudmaptrans.jpg'),
-
 });
 
 const cloudsMesh = new THREE.Mesh(geometry, cloudsMat);
@@ -63,8 +62,4 @@ function animate() {
 }
 
 animate();
-function handleWindowResize () {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-}
+
